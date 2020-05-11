@@ -1,7 +1,7 @@
 # WannaFake
 WannaFake | Fake WannaCry Ransomware
 
-> Note 1: This project is for fun only, use at your own risk. I do not encourage in any way the use of this software > > illegally or to attack targets without their previous authorization
+> This project is for fun only, use at your own risk. I do not encourage in any way the use of this software > > illegally or to attack targets without their previous authorization
 
 ## What is Ransomware ?
 Ransomware is a type of malware that prevents or limits users from accessing their system, either by locking the system's screen or by locking the users' files unless a ransom is paid. More modern ransomware families, collectively categorized as crypto-ransomware, encrypt certain file types on infected systems and forces users to pay the ransom through certain online payment methods to get a decrypt key.
@@ -15,6 +15,7 @@ The server store the victim's IP to identify the computer, along with the encryp
 
 - Simple GUI, user-friendly
 - Run in Background
+- Smart timer algorithm, it will continue also when the PC is off.
 
 ## How to Run ?
 1. You need to run the server first, the server will wait for connection from the client to retrieve the key.
