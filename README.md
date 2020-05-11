@@ -13,9 +13,10 @@ The server store the victim's IP to identify the computer, along with the encryp
 
 ## Features
 
-- Simple GUI, user-friendly
+- Simple GUI, user-friendly and nice design
 - Run in Background
-- Smart timer algorithm, it will continue also when the PC is off.
+- Smart timer algorithm, it will continue also when the PC is off
+- Supports the victim and gives him information sources
 
 ## How to Run ?
 1. You need to run the server first, the server will wait for connection from the client to retrieve the key.
