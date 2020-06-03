@@ -23,6 +23,6 @@ The server store the victim's IP to identify the computer, along with the encryp
 2. Run the ransom.py file, this is the ransomware, it will encrypt your system and send it to the server, also, it will automatically download the GUI (decryptor) and run it automatically.
 3. The decryptor will run and the timer will also start, once the time is reaching the end, all your files will be deleted.
 
-> Thank you for reading!
-
 ![Main GUI](https://github.com/r0eilevi/WannaFake/blob/master/Examples/main_gui.png?raw=true)
+
+> Thank you for reading!
