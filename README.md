@@ -27,6 +27,4 @@ The server store the victim's IP to identify the computer, along with the encryp
 1. Make sure you have pyinstaller installed and up-to date
 2. Run each line in pyinstaller.txt file
 
-![Main GUI](https://github.com/r0eilevi/WannaFake/blob/master/Examples/main_gui.png?raw=true)
-
 > Thank you for reading!
