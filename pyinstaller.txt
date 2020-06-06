@@ -1,0 +1,3 @@
+pyinstaller -w -F WannaFake/server.py
+pyinstaller -w -F WannaFake/ransom.py
+pyinstaller -w -F WannaFake/GUI.py
