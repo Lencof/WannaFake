@@ -50,7 +50,7 @@ class GUI(Frame):
         bitcoin_msg.place(x=480, y=470)
 
         big_text_area = Label(self.master, width=70, height=25, bg='white', foreground='black')
-        big_text_area.config(anchor=NW, justify=LEFT, highlightthickness=4, text=open('note.txt').read())
+        big_text_area.config(anchor=NW, justify=LEFT, highlightthickness=4, text=open('gui_note.txt').read())
         big_text_area.place(x=370, y=30)
 
         about_bitcoin = Label(self.master, underline=True, font=(None, 14), bg=self._from_rgb((139, 0, 0)), fg='lightblue', text='About bitcoin')
