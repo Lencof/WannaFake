@@ -5,7 +5,6 @@ import socket
 import webbrowser
 import datetime
 import tkinter.messagebox
-from tkMessageBox import showerror
 from pathlib import Path
 from cryptography.fernet import Fernet
 from tempfile import gettempdir
