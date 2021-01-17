@@ -1,5 +1,4 @@
 pycryptodome
 requests
-python3-tk
 cryptography
 pyinstaller
