@@ -76,12 +76,12 @@ class GUI(Frame):
         lost_date.place(x=80, y=300)
 
         red_lock = Label(self.master, bg=self._from_rgb((139, 0, 0)), compound='top')
-        red_lock.red_lock_image = PhotoImage(file='images/red_lock.png')
+        red_lock.red_lock_image = PhotoImage(file='../images/red_lock.png')
         red_lock['image'] = red_lock.red_lock_image
         red_lock.place(x=50, y=0)
 
         bitcoin_img = Label(self.master, bg=self._from_rgb((139, 0, 0)), compound='top')
-        bitcoin_img.bit_coin_img = PhotoImage(file='images/bitcoin.png')
+        bitcoin_img.bit_coin_img = PhotoImage(file='../images/bitcoin.png')
         bitcoin_img['image'] = bitcoin_img.bit_coin_img
         bitcoin_img.place(x=389, y=471)     
 
