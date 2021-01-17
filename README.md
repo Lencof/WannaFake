@@ -15,5 +15,4 @@ The server store the victim's IP to identify the computer, along with the encryp
 
 ## Setup
 **In _ransom.py_ make sure to change `YOUR WALLPAPER BACKGROUND` to an image (link from a web server) you want to use as a wallpaper
-And also change `IP` to your server IP in which you want the victim data to be sent to
-**
+And also change `IP` to your server IP in which you want the victim data to be sent to**
