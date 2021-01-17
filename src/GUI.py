@@ -159,7 +159,7 @@ class GUI(Frame):
                     f.write(plain_text)
             tkinter.messagebox.showinfo('WannaFake Decrypt0r', 'Your files have been decrypted!')
         except:
-            tkinter.messagebox.showerror(title='WannaFake Decrypt0r', message='Error: Invalid key')           
+            tkinter.messagebox.showinfo(title='WannaFake Decrypt0r', message='Error: Invalid key')           
 
     def show_message(self):
         window = Toplevel(self.master)
