@@ -10,8 +10,8 @@ The server store the victim's IP to identify the computer, along with the encryp
 
 ## Features
 
-- GUI that looks similair to WannaCry
-- Timer algorithm, continues also when the PC is off
+- GUI that looks similar to WannaCry
+- Timer algorithm, continue also when the PC is off
 - The victim has only 7 days to send the money
 
 ## Setup
