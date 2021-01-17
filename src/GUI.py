@@ -5,6 +5,7 @@ import socket
 import webbrowser
 import datetime
 import tkinter.messagebox
+from tkMessageBox import showerror
 from pathlib import Path
 from cryptography.fernet import Fernet
 from tempfile import gettempdir
@@ -159,7 +160,7 @@ class GUI(Frame):
                     f.write(plain_text)
             tkinter.messagebox.showinfo('WannaFake Decrypt0r', 'Your files have been decrypted!')
         except:
-            tkinter.messagebox.showerror('WannaFake Decrypt0r', 'Error: Invalid key')           
+            tkinter.messagebox.showerror(title='WannaFake Decrypt0r', message='Error: Invalid key')           
 
     def show_message(self):
         window = Toplevel(self.master)
