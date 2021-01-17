@@ -12,7 +12,8 @@ The server store the victim's IP to identify the computer, along with the encryp
 
 - GUI that looks similair to WannaCry
 - Timer algorithm, continues also when the PC is off
+- The victim has only 7 days to send the money
 
 ## Setup
 In _ransom.py_ make sure to change `YOUR WALLPAPER BACKGROUND` to an image (link from a web server) you want to use as a wallpaper
-And also change `IP` to your server IP in which you want the victim data to be sent to
+and also change `IP` to your server IP in which you want the victim data to be sent to
