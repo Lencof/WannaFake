@@ -2,6 +2,7 @@ import time
 import threading
 import os
 import socket
+import pygame
 import webbrowser
 import datetime
 import tkinter.messagebox
