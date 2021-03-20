@@ -2,3 +2,12 @@ pycryptodome
 requests
 cryptography
 pyinstaller
+tkinter
+socket
+threading
+webbrowser
+datetime
+Path
+gettempdir
+pygame
+random
