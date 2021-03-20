@@ -1,4 +1,4 @@
-pycryptodome
-requests
-cryptography
-pyinstaller
+pip install pycryptodome
+pip install requests
+pip install cryptography
+pip install pyinstaller
